@@ -39,4 +39,4 @@ PORT=3100
 ## Notes
 
 - The raw body must be used for signature verification; don't stringify/parse before computing HMAC.
-- The signature header must be in the format `sha256=<hex)`.
+- The signature header must be in the format `sha256=<hex>`.
