@@ -1,7 +1,6 @@
 # Therame API-signing example (Express + TypeScript)
 
 This folder contains a minimal Express app in TypeScript that verifies Therame webhook signatures.
-It mirrors the verification logic in the NestJS app at the repository root.
 
 ## Features
 
@@ -26,14 +25,14 @@ pnpm dev
 
 ## Configuration
 
-- `WEBHOOK_SECRET`: shared secret used to compute/verify HMAC. Defaults to the same demo value used in the NestJS app.
-- `PORT`: defaults to `3100` for this sub-app.
+- `WEBHOOK_SECRET`: shared secret used to compute/verify HMAC.
+- `PORT`: defaults to `3000` for this app.
 
 Create an `.env` file to override:
 
 ```
 WEBHOOK_SECRET=replace_me
-PORT=3100
+PORT=3000
 ```
 
 ## Notes

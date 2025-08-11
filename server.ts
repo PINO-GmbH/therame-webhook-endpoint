@@ -1,5 +1,4 @@
 // Simple Therame API-signing example (Express + TypeScript)
-// Mirrors the NestJS webhook verification implemented in ../src
 
 import crypto from 'crypto';
 import 'dotenv/config';
