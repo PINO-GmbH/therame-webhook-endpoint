@@ -58,14 +58,15 @@ app.post('/therame-webhook', (req: Request, res: Response) => {
   }
 
   console.log('Signature verified successfully');
-  console.log('Raw body (string):', rawBody.toString('utf8'));
+  const bodyString = rawBody.toString('utf8');
+  console.log('Raw body (string):', bodyString);
   console.log('Signature (header):', signature);
   console.log('Expected (computed):', `sha256=${result.expected}`);
   console.log('Event Type:', eventType);
   console.log('Event ID:', eventId);
 
   // Process webhook payload here
-  return res.json({ status: 'ok' });
+  return res.status(200).json({ status: 'ok' });
 });
 
 app.listen(PORT, () => {
